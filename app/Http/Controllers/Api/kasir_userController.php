@@ -73,7 +73,6 @@ class kasir_userController extends Controller {
     {
         // Validasi data yang diterima
         $validatedData = $request->validate([
-            'id_user' => 'required|integer',
             'username' => 'required|string|max:255',
             'password' => 'required|string',
             'role' => 'required|string|in:admin,petugas_kasir',
